@@ -4,7 +4,7 @@ Draw how the authentication flow of a system using OAuth2 (JWT-based) communicat
 
 A drawio template file has been provided in the repository that can be loaded
 
-![Loading a template file into Draw.io](Load From Template.png "Loading a template file into Draw.io")
+![Loading a template file into Draw.io](Load From Template.png)
 
 Questions:
 * How should jwt token be stored in the client side? 
