@@ -1,12 +1,10 @@
 export function ToDoAppComponent() {
-
-    //pass list of 'Todo' objects into TodoList component for this component to render
-
     return <TodoList />
 }
 
 
 export function TodoList() {
+    //define todo list here.
     return <></>
 }
 
