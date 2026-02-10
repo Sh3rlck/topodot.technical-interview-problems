@@ -22,19 +22,3 @@ Code
 * Defining **Todo** type
 * Styling components to meet the minimum requirements
 * Components need to be returned in **ToDoAppComponent**
-
-```jsx
-import { useState } from "react"; 
-
- 
-
-// Parent Component 
-
- /**Return component that displays all TodoListItem of type Todo*/ 
-
- 
-
-// Child Component 
-
-/**component that displays a single TodoListItem of type Todo */ 
-```

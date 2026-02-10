@@ -6,35 +6,8 @@ Requirements:
 * Fetch the data only when the component loads
 * Show a loading indicator
 * Show an error message if the API fails
-* Display the list of user’s usernames.
+* Display the list of usernames.
 
-Initial Setup
-```jsx
-import { useEffect, useState } from "react"; 
-
- 
-
-export function Users() { 
-
-  const [users, setUsers] = useState([]); 
-
-  const [loading, setLoading] = useState(true); 
-
-  const [error, setError] = useState(null); 
-
- 
-
-  /**Fetch data and handle loading and error states */ 
-
- 
-
-  return ( 
-
-    /** return list of usernames */ 
-
-  ); 
-} 
-```
 Sample API Response from the endpoint mentioned above
 ```json
 [
