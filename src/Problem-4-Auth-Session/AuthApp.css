@@ -1,0 +1,227 @@
+/* ===== Placeholder ===== */
+.p4-placeholder {
+  padding: 2rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+/* ===== Navbar ===== */
+.p4-navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  height: 52px;
+  background: #1e293b;
+  color: #f1f5f9;
+  flex-shrink: 0;
+}
+
+.p4-navbar-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: auto;
+}
+
+.p4-navbar-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.p4-nav-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #cbd5e1;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.p4-nav-btn:hover,
+.p4-nav-btn.active {
+  border-color: #94a3b8;
+  color: #f1f5f9;
+}
+
+.p4-navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.p4-user-greeting {
+  color: #94a3b8;
+}
+
+.p4-btn-logout {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.p4-btn-logout:hover {
+  background: #b91c1c;
+}
+
+/* ===== Login Page ===== */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.login-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-card h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.login-error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin: 0 0 0.75rem;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 0.6rem;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.credentials-hint {
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  color: #0369a1;
+}
+
+.credentials-hint p {
+  margin: 0.15rem 0;
+}
+
+.credentials-hint code {
+  background: #e0f2fe;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* ===== Page Content ===== */
+.p4-page-content {
+  padding: 1.5rem 2rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.p4-page-content h2 {
+  margin-top: 0;
+}
+
+.p4-info-box {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  max-width: 480px;
+}
+
+.p4-info-box p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.p4-info-box--admin {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  color: #92400e;
+}
+
+.p4-info-box--user {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  color: #166534;
+}
+
+/* ===== Admin Table ===== */
+.p4-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.p4-admin-table th,
+.p4-admin-table td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.p4-admin-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #374151;
+}
+
+.p4-admin-table tr:hover td {
+  background: #f8fafc;
+}
+
+/* ===== Access Denied ===== */
+.p4-access-denied {
+  padding: 2rem;
+  text-align: center;
+  color: #dc2626;
+}
