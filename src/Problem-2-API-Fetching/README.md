@@ -8,7 +8,7 @@ Write a React component that fetches and displays a list of users from an API li
 * Show an error message if the API fails
 * Display the list of usernames.
 
-Sample API Response from the endpoint mentioned above
+### Sample API Response from the endpoint mentioned above
 ```json
 [
   {
@@ -58,4 +58,11 @@ Sample API Response from the endpoint mentioned above
     }
   }
 ]
+```
+
+## File structure
+
+```
+Problem-2-API-Fetching/
+├── UserListComponent.tsx                  ← Fetch user list in here
 ```

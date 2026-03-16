@@ -9,3 +9,12 @@ Write a React component that displays a counter and allows the user to increase/
 * Click the '-' button to decrement.
 * Display counter * 3.
 * Write a unit test to verify that clicking the button increments the counter. Can be pseudo or real.
+
+## File structure
+
+```
+Problem-1-React-Counter-Component/
+├── ReactCounterComponent.tsx                  ← Define counter app here
+```
+
+---
