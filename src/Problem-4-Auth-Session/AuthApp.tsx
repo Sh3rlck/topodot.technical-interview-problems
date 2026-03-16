@@ -10,19 +10,16 @@ function AppContent() {
   const { isAuthenticated } = useAuth();
   const [currentPage, setCurrentPage] = useState<'dashboard' | 'admin'>('dashboard');
 
-  // TODO: If the user is NOT authenticated, render the login page:
-  //
-  //         <LoginPage onSuccess={() => setCurrentPage('dashboard')} />
-  //
-  // TODO: If the user IS authenticated, render the full app layout:
-  //
-  //   1. <NavBar currentPage={currentPage} onNavigate={setCurrentPage} />
-  //
-  //   2. The correct page below the NavBar based on currentPage:
-  //        'dashboard' → <Dashboard />
-  //        'admin'     → <AdminPanel />
+  if (!isAuthenticated) {
+    return <LoginPage onSuccess={() => setCurrentPage('dashboard')} />;
+  }
 
-  return <div className="p4-placeholder">Implement the app layout here.</div>;
+  return (
+      <>
+        <NavBar currentPage={currentPage} onNavigate={setCurrentPage} />
+        {currentPage === 'dashboard' ? <Dashboard /> : <AdminPanel />}
+      </>
+  );
 }
 
 export function AuthApp() {

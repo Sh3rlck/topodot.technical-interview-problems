@@ -20,9 +20,7 @@ export function NavBar({ currentPage, onNavigate }: NavBarProps) {
           Dashboard
         </button>
 
-        {/* TODO: Render the "Admin Panel" button ONLY when currentUser's role is 'admin'.
-                  It should call onNavigate('admin') when clicked and apply the same
-                  p4-nav-btn / active classes as the Dashboard button above. */}
+        {/* TODO: Display "Admin Panel" button ONLY when currentUser's role is 'admin'. It should navigate to admin page once it is clicked.*/}
       </div>
 
       <div className="p4-navbar-user">

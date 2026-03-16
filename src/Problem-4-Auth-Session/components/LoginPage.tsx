@@ -8,26 +8,18 @@ interface LoginPageProps {
 export function LoginPage({ onSuccess }: LoginPageProps) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError]       = useState('');
+  const [error, setError] = useState('');
 
   const { login } = useAuth();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setError('');
-
-  
-    // TODO: Call login() with the current username and password values.
-    //         - If login() returns false → set error to "Invalid username or password."
-    //         - If login() returns true  → call onSuccess() to enter the app.
-  };
+ //TODO: Implement the login function when the form is submitted.
 
   return (
     <div className="login-wrapper">
       <div className="login-card">
         <h2>Sign In</h2>
 
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className="form-group">
             <label htmlFor="p4-username">Username</label>
             <input

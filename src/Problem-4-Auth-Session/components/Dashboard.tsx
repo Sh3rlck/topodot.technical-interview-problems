@@ -8,9 +8,7 @@ export function Dashboard() {
       <h2>Dashboard</h2>
       <p>Welcome back, <strong>{currentUser?.name}</strong>!</p>
 
-      {/* TODO: Render ONE of the two info boxes below based on currentUser.role:
-                - role === 'admin' → render the admin info box
-                - role === 'user'  → render the user info box
+      {/* TODO: Render the appropriate info box based on the user's role:'
 
           Admin info box:
             <div className="p4-info-box p4-info-box--admin">
