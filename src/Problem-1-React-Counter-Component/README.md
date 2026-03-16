@@ -2,7 +2,7 @@
 
 Write a React component that displays a counter and allows the user to increase/decrease said counter. Additionally, add another label that displays counter * 3.
 
-Requirements:
+## Requirements:
 * Counter starts from 0.
 * Counter cannot be negative.
 * Click the '+' button to increment.

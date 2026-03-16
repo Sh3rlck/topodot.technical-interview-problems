@@ -7,11 +7,9 @@ Your job is to wire up login, session persistence, protected navigation, and rol
 
 ---
 
-## What you need to build
+## Requirements
 
 ### 1. `context/AuthContext.tsx` — Auth state & session
-
-Implement the `AuthProvider` so that:
 - Log in as any of the users provided in `MOCK_USERS`.
 - Page maintains the current session after a refresh.
 - Log out of the current session.
@@ -46,7 +44,7 @@ Implement the `AuthProvider` so that:
 
 ```
 Problem-4-Auth-Session/
-├── AuthApp.tsx              ← app entry (wire everything together here)
+├── AuthApp.tsx              ← pre-filled, do not modify
 ├── AuthApp.css              ← pre-written styles (do not modify)
 ├── context/
 │   └── AuthContext.tsx      ← implement login, logout, session restore

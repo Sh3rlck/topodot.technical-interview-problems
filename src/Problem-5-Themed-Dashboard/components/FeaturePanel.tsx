@@ -10,14 +10,12 @@ interface FeatureCardProps {
 }
 
 function FeatureCard({ title, description, notificationMessage, notificationType }: FeatureCardProps) {
-  // TODO: Call useNotifications() and destructure `addNotification`.
+  // TODO: Implement add notification
 
   return (
     <div className="p5-feature-card">
       <h4>{title}</h4>
       <p>{description}</p>
-      {/* TODO: Add an onClick handler to the button below that calls
-                addNotification(notificationMessage, notificationType). */}
       <button className={`p5-btn-feature p5-btn-feature--${notificationType}`}>
         Trigger
       </button>
@@ -26,9 +24,8 @@ function FeatureCard({ title, description, notificationMessage, notificationType
 }
 
 export function FeaturePanel() {
-  // TODO: Call useTheme() and destructure `theme`.
-  //       Apply a theme-aware className to the <main> element:
-  //         "p5-feature-panel p5-feature-panel--light" or "--dark".
+     // TODO: Apply a theme-aware className to the <main> element:=
+    // Use "p5-feature-panel--light" or "p5-feature-panel--dark".
 
   return (
     <main className="p5-feature-panel">

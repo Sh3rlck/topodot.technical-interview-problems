@@ -2,8 +2,7 @@
 
 Create a feature with two parts: display a TodoList that renders TodoListItems given an array of Todo items.
 
-Requirements:
-
+## Requirements:
 * Define the type for a **Todo** item to at least contain id, text and whether it is completed or not.
 * **TodoList** renders a **TodoListItem** for each Todo item.
 * **TodoListItem** should display the text of the **Todo** as well as a button to toggle said **Todo** as completed or not completed.

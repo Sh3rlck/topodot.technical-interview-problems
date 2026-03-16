@@ -34,9 +34,9 @@ body {
 }
 
 /* ===== Problems 4 & 5 row ===== */
-.bottomrow {
+.bottom-row {
   display: flex;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 }
 
 .problem-4-pane,

@@ -24,15 +24,15 @@ createRoot(document.getElementById('root')!).render(
                     <ToDoAppComponent/>
                 </div>
             </div>
-            <div className={"bottomrow"}>
+            <div className={"bottom-row"}>
                 <div className="problem-4-pane">
-                    <h1 className="pane-title">Problem 4 - Auth Session &amp; Role-Based UI</h1>
+                    <h1>Problem 4 - Auth Session &amp; Role-Based UI</h1>
                     <div className="pane-body">
                         <AuthApp/>
                     </div>
                 </div>
                 <div className="problem-5-pane">
-                    <h1 className="pane-title">Problem 5 - Themed Dashboard with Context</h1>
+                    <h1>Problem 5 - Themed Dashboard with Context</h1>
                     <div className="pane-body">
                         <ThemedApp/>
                     </div>

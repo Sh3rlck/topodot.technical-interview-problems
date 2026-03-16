@@ -1,8 +1,8 @@
 # Problem 2 – API Fetching
 
 Write a React component that fetches and displays a list of users from an API like https://jsonplaceholder.typicode.com/users.  
-Requirements:
 
+## Requirements:
 * Fetch the data only when the component loads
 * Show a loading indicator
 * Show an error message if the API fails
