@@ -23,18 +23,20 @@ createRoot(document.getElementById('root')!).render(
                     <h1>Problem 3 - To Do App Feature</h1>
                     <ToDoAppComponent/>
                 </div>
-                {/* <div className="problem-4-pane">
+            </div>
+            <div className={"bottomrow"}>
+                <div className="problem-4-pane">
                     <h1 className="pane-title">Problem 4 - Auth Session &amp; Role-Based UI</h1>
                     <div className="pane-body">
                         <AuthApp/>
                     </div>
-                </div> */}
-                {/* <div className="problem-5-pane">
+                </div>
+                <div className="problem-5-pane">
                     <h1 className="pane-title">Problem 5 - Themed Dashboard with Context</h1>
                     <div className="pane-body">
                         <ThemedApp/>
                     </div>
-                </div> */}
+                </div>
             </div>
         </div>
     </StrictMode>,

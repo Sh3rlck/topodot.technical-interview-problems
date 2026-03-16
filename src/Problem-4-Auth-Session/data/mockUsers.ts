@@ -1,4 +1,4 @@
-import { User } from '../types/auth.types';
+import type {User} from "../types/auth.types.ts";
 
 export interface MockUser extends User {
   password: string;

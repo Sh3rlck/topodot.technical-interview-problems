@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { AuthContextType, User } from '../types/auth.types';
+import type { AuthContextType, User } from '../types/auth.types';
 import { MOCK_USERS } from '../data/mockUsers';
 
 const SESSION_KEY = 'auth_user';

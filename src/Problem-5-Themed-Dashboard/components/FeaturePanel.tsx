@@ -1,6 +1,6 @@
 import { useTheme } from '../context/ThemeContext';
 import { useNotifications } from '../context/NotificationContext';
-import { NotificationType } from '../types/app.types';
+import type {NotificationType} from "../types/app.types.ts";
 
 interface FeatureCardProps {
   title: string;
