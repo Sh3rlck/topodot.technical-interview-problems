@@ -4,7 +4,14 @@ import { MOCK_USERS } from '../data/mockUsers';
 export function AdminPanel() {
   const { currentUser } = useAuth();
 
-  // TODO: Guard this page. Deny access if the current user is not an admin.
+    if (currentUser?.role !== 'admin') {
+        return (
+            <div className="p4-access-denied">
+                <h3>Access Denied</h3>
+                <p>You do not have permission to view this page.</p>
+            </div>
+        );
+    }
 
   return (
     <div className="p4-page-content">
@@ -21,7 +28,18 @@ export function AdminPanel() {
           </tr>
         </thead>
         <tbody>
-          {/* TODO: display the id, name, username, and role of each user in MOCK_USERS */}
+          {
+              MOCK_USERS.map((user) => {
+                  return (
+                      <tr key={user.id}>
+                          <td>{user.id}</td>
+                          <td>{user.name}</td>
+                          <td>{user.username}</td>
+                          <td>{user.role}</td>
+                      </tr>
+                  )
+              })
+          }
         </tbody>
       </table>
     </div>

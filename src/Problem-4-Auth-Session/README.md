@@ -2,34 +2,21 @@
 
 ## Scenario
 
-You are building the authentication layer for a new React application. The back end has already been implemented, but for this exercise a set of **mock users** is provided in `data/mockUsers.ts` — no real API calls are needed.
-Your job is to wire up login, session persistence, protected navigation, and role-based UI using React state and context.
+You are building the authentication layer for a new React application. The backend is already implemented, but for this exercise, a set of mock users is provided in data/mockUsers.ts, so no real API calls are required.
 
----
+The authentication layer should:
 
-## Requirements
-
-### 1. `context/AuthContext.tsx` — Auth state & session
 - Log in as any of the users provided in `MOCK_USERS`.
-- Page maintains the current session after a refresh.
+- Allow developers to protect certain pages from unauthorized access
+- Persist the user’s session even after a page refresh
 - Log out of the current session.
 
-### 2. `components/LoginPage.tsx` — Login form
-- Execute login logic when the form is submitted.
-- Show an error message when login fails.
-- Navigate into the application when login succeeds.
+Questions:
 
-### 3. `components/NavBar.tsx` — Navigation
-- Display the Admin Panel only when the current user has the `'admin'` role.
+- Which React API(s) would you use to implement this authentication layer?
+- How can different components in the application access and interact with it?
 
-### 4. `components/Dashboard.tsx` — Home page
-- Show a role-specific message:
-  - **Admin** → prompt to visit the Admin Panel.
-  - **User** → confirm standard account access.
-
-### 5. `components/AdminPanel.tsx` — Protected page
-- Deny access to the panel if the current user is not an admin.
-- Render a table listing all users from `MOCK_USERS`.
+For this exercise, the UI components, styles, login form, and mock user data are already provided. Your task is to implement the authentication logic and integration.
 
 ## Test credentials
 
@@ -44,17 +31,17 @@ Your job is to wire up login, session persistence, protected navigation, and rol
 
 ```
 Problem-4-Auth-Session/
-├── AuthApp.tsx              ← pre-filled, do not modify
-├── AuthApp.css              ← pre-written styles (do not modify)
+├── AuthApp.tsx              ← pre-filled, needs implementation
+├── AuthApp.css              ← pre-written style
 ├── context/
 │   └── AuthContext.tsx      ← implement login, logout, session restore
 ├── components/
-│   ├── LoginPage.tsx        ← implement form submit handler
-│   ├── NavBar.tsx           ← implement admin-only nav link
-│   ├── Dashboard.tsx        ← implement role-based message
-│   └── AdminPanel.tsx       ← implement page guard + user table
+│   ├── LoginPage.tsx        ← pre-filled, needs implementation
+│   ├── NavBar.tsx           ← pre-filled, needs implementation
+│   ├── Dashboard.tsx        ← pre-filled, needs implementation
+│   └── AdminPanel.tsx       ← pre-filled, needs implementation
 ├── data/
-│   └── mockUsers.ts         ← pre-filled, do not modify
+│   └── mockUsers.ts         ← pre-filled
 └── types/
-    └── auth.types.ts        ← pre-filled, do not modify
+    └── auth.types.ts        ← pre-filled
 ```

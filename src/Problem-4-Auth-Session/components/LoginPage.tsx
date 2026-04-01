@@ -12,14 +12,24 @@ export function LoginPage({ onSuccess }: LoginPageProps) {
 
   const { login } = useAuth();
 
- //TODO: Implement the login function when the form is submitted.
+ const handleLogin = () => {
+    try {
+        if(login(username, password)){
+          onSuccess();
+        }else {
+          setError('Invalid username or password');
+        }
+    } catch (error) {
+        setError('Invalid username or password');
+    }
+ }
 
   return (
     <div className="login-wrapper">
       <div className="login-card">
         <h2>Sign In</h2>
 
-        <form>
+        <form onSubmit={() => {handleLogin()}}>
           <div className="form-group">
             <label htmlFor="p4-username">Username</label>
             <input

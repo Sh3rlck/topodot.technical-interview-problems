@@ -15,12 +15,15 @@ export function NavBar({ currentPage, onNavigate }: NavBarProps) {
       <div className="p4-navbar-links">
         <button
           className={currentPage === 'dashboard' ? 'p4-nav-btn active' : 'p4-nav-btn'}
-          onClick={() => onNavigate('dashboard')}
-        >
+          onClick={() => onNavigate('dashboard')}>
           Dashboard
         </button>
 
-        {/* TODO: Display "Admin Panel" button ONLY when currentUser's role is 'admin'. It should navigate to admin page once it is clicked.*/}
+        {currentUser?.role === 'admin' && (
+            <button onClick={() => onNavigate('admin')}>
+                Admin Panel
+            </button>
+        )}
       </div>
 
       <div className="p4-navbar-user">

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginPage } from './components/LoginPage';
 import { NavBar } from './components/NavBar';
 import { Dashboard } from './components/Dashboard';
@@ -24,8 +23,6 @@ function AppContent() {
 
 export function AuthApp() {
   return (
-    <AuthProvider>
       <AppContent />
-    </AuthProvider>
   );
 }
