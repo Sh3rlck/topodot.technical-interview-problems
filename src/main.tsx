@@ -4,8 +4,7 @@ import './index.css'
 import {ReactCounterComponent} from "./Problem-1-React-Counter-Component/ReactCounterComponent.tsx";
 import {UsersListComponent} from "./Problem-2-API-Fetching/UserListComponent.tsx";
 import {ToDoAppComponent} from "./Problem-3-To-Do-App-Feature/ToDoAppComponent.tsx";
-import {ThemedApp} from "./Problem-5-Themed-Dashboard/ThemedApp.tsx";
-import {AuthApp} from "./Problem-4-Auth-Session/AuthApp.tsx";
+// import {AuthApp} from "./Problem-4-Auth-Session/AuthApp.tsx";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -24,20 +23,14 @@ createRoot(document.getElementById('root')!).render(
                     <ToDoAppComponent/>
                 </div>
             </div>
-            <div className={"bottom-row"}>
-                <div className="problem-4-pane">
-                    <h1>Problem 4 - Auth Session &amp; Role-Based UI</h1>
-                    <div className="pane-body">
-                        <AuthApp/>
-                    </div>
-                </div>
-                <div className="problem-5-pane">
-                    <h1>Problem 5 - Themed Dashboard with Context</h1>
-                    <div className="pane-body">
-                        <ThemedApp/>
-                    </div>
-                </div>
-            </div>
+            {/*<div className={"bottom-row"}>*/}
+            {/*    <div className="problem-4-pane">*/}
+            {/*        <h1>Problem 4 - Auth Session &amp; Role-Based UI</h1>*/}
+            {/*        <div className="pane-body">*/}
+            {/*            <AuthApp/>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     </StrictMode>,
 )
