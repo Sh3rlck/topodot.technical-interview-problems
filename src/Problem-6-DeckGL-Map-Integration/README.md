@@ -37,3 +37,5 @@ Problem-6-DeckGL-Map-Integration/
 └── types/
     └── map.types.ts           ← pre-filled (do not modify)
 ```
+## Notes
+You can use the following style for the map "mapbox://styles/mapbox/dark-v11"
