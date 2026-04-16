@@ -5,6 +5,7 @@ import {ReactCounterComponent} from "./Problem-1-React-Counter-Component/ReactCo
 import {UsersListComponent} from "./Problem-2-API-Fetching/UserListComponent.tsx";
 import {ToDoAppComponent} from "./Problem-3-To-Do-App-Feature/ToDoAppComponent.tsx";
 // import {AuthApp} from "./Problem-4-Auth-Session/AuthApp.tsx";
+// import {DeckGLMap} from "./Problem-6-DeckGL-Map-Integration/DeckGLMap.tsx";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -28,6 +29,14 @@ createRoot(document.getElementById('root')!).render(
             {/*        <h1>Problem 4 - Auth Session &amp; Role-Based UI</h1>*/}
             {/*        <div className="pane-body">*/}
             {/*            <AuthApp/>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*<div className={"map-row"}>*/}
+            {/*    <div className="problem-6-pane">*/}
+            {/*        <h1>Problem 6 - Deck.gl Map Integration</h1>*/}
+            {/*        <div className="pane-body">*/}
+            {/*            <DeckGLMap/>*/}
             {/*        </div>*/}
             {/*    </div>*/}
             {/*</div>*/}

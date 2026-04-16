@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find src/Problem-1* -type f -name \"*.md\" -o -name \"*.tsx\" -o -name \"*.ts\")",
+      "Bash(ls -d src/Problem-*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}
