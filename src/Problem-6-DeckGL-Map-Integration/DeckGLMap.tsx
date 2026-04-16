@@ -1,7 +1,7 @@
 import type { MapPoint } from './types/map.types';
 import { ORLANDO_VIEW_STATE, ORLANDO_POINTS, ORLANDO_POLYGONS } from './data/orlandoMapData';
 import {DeckGL, ScatterplotLayer, PolygonLayer} from "deck.gl";
-import {Map} from "react-map-gl";
+
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './DeckGLMap.css';
 
@@ -29,7 +29,7 @@ export function DeckGLMap() {
 
   return (
     <div className="p6-map-container">
-
+      <p>replace this with map</p>
     </div>
   );
 }
