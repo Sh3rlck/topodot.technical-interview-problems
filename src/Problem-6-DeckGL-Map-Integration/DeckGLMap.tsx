@@ -4,6 +4,7 @@ import {DeckGL, ScatterplotLayer, PolygonLayer} from "deck.gl";
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './DeckGLMap.css';
+import {Map} from "react-map-gl/mapbox-legacy";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN as string;
 
