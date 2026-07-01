@@ -3,14 +3,7 @@
 ## Scenario
 
 You are adding a map visualization to an existing React application. The application needs to display Orlando, FL landmarks and neighborhood boundaries using Deck.gl with a Mapbox base map.
-
-The data, types, styles, and Mapbox token are already provided. Your task is to initialize Deck.gl with a Mapbox base map and configure two visualization layers.
-
-Questions:
-
-- What is the difference between `initialViewState` (uncontrolled) and `viewState` (controlled) in Deck.gl?
-- Why does Deck.gl require accessor functions (`getPosition`, `getPolygon`) rather than a flat data format?
-- What would you need to change to make the layers respond to hover or click events?
+The data, styles, and Mapbox token are already provided. Your task is to initialize Deck.gl with a Mapbox base map and configure two visualization layers.
 
 ## Requirements
 
@@ -23,19 +16,8 @@ Questions:
 | Interactivity        | Pan, zoom, and rotate should work (controller enabled)                  |
 | CSS import           | Import the required `mapbox-gl` stylesheet                              |
 
----
 
-## File structure
-
-```
-Problem-6-DeckGL-Map-Integration/
-├── DeckGLMap.tsx              ← implement TODOs here
-├── DeckGLMap.css              ← pre-written styles
-├── README.md
-├── data/
-│   └── orlandoMapData.ts      ← pre-filled (do not modify)
-└── types/
-    └── map.types.ts           ← pre-filled (do not modify)
-```
 ## Notes
 You can use the following style for the map "mapbox://styles/mapbox/dark-v11"
+
+A Mapbox access token is required. Provide it in `.env.local` as `VITE_MAPBOX_TOKEN` (see `.env.local.example`).
