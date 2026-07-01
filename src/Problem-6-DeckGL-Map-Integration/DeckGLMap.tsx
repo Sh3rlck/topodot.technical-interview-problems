@@ -1,10 +1,8 @@
-import type { MapPoint } from './types/map.types';
+import type { MapPoint, MapPolygon } from './types/map.types';
 import { ORLANDO_VIEW_STATE, ORLANDO_POINTS, ORLANDO_POLYGONS } from './data/orlandoMapData';
-import {DeckGL, ScatterplotLayer, PolygonLayer} from "deck.gl";
-import 'mapbox-gl/dist/mapbox-gl.css';
+import {DeckGL, PolygonLayer, ScatterplotLayer} from "deck.gl";
+import Map from 'react-map-gl/mapbox';
 import './DeckGLMap.css';
-import {Map} from "react-map-gl/mapbox-legacy";
-
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN as string;
 
 /**
